@@ -18,7 +18,7 @@ function DefaultLayout({
 					<DefaultNav />
 					<main className='flex-1 overflow-scroll border'>
 						{/* <div style={{ width: 10000, height: 10000 }}>{children}</div> */}
-						<div>{children}</div>
+						{children}
 					</main>
 					<DefaultAside />
 				</div>
