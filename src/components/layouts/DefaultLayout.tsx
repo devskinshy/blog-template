@@ -18,20 +18,20 @@ function DefaultLayout({
 	return (
 		<div className='flex h-screen w-screen flex-col'>
 			<DefaultHeader />
-			<ResizablePanelGroup
-				direction='vertical'
-				className='flex flex-1 flex-col overflow-hidden'>
-				<ResizablePanel className='flex flex-1 flex-row overflow-hidden'>
-					<DefaultNav />
-					<main className='flex-1 overflow-scroll border'>
-						{/* <div style={{ width: 10000, height: 10000 }}>{children}</div> */}
-						{children}
-					</main>
-					<DefaultAside />
+			<ResizablePanelGroup direction='vertical'>
+				<ResizablePanel defaultSize={75}>
+					<nav>nav</nav>
+					<main>main</main>
+					<aside>aside</aside>
 				</ResizablePanel>
 				<ResizableHandle />
-				<ResizablePanel>
-					<DefaultTerminal />
+				<ResizablePanel
+					collapsible
+					collapsedSize={0}
+					defaultSize={25}
+					minSize={10}
+					maxSize={50}>
+					<article>terminal</article>
 				</ResizablePanel>
 			</ResizablePanelGroup>
 			<DefaultFooter />
