@@ -20,9 +20,29 @@ function DefaultLayout({
 			<DefaultHeader />
 			<ResizablePanelGroup direction='vertical'>
 				<ResizablePanel defaultSize={75}>
-					<nav>nav</nav>
-					<main>main</main>
-					<aside>aside</aside>
+					<ResizablePanelGroup direction='horizontal'>
+						<ResizablePanel
+							collapsible
+							collapsedSize={0}
+							defaultSize={0}
+							minSize={10}
+							maxSize={50}>
+							<nav>nav</nav>
+						</ResizablePanel>
+						<ResizableHandle />
+						<ResizablePanel>
+							<main>main</main>
+						</ResizablePanel>
+						<ResizableHandle />
+						<ResizablePanel
+							collapsible
+							collapsedSize={0}
+							defaultSize={0}
+							minSize={10}
+							maxSize={50}>
+							<aside>aside</aside>
+						</ResizablePanel>
+					</ResizablePanelGroup>
 				</ResizablePanel>
 				<ResizableHandle />
 				<ResizablePanel
