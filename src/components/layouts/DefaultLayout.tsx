@@ -18,7 +18,7 @@ function DefaultLayout({
 	return (
 		<div className='grid h-screen w-screen grid-cols-[auto_1fr_auto] grid-rows-[auto_1fr_auto]'>
 			<DefaultHeader />
-			<nav>nav</nav>
+			<nav className='border-r-[1px]'>nav</nav>
 			<main>
 				<ResizablePanelGroup direction='vertical'>
 					<ResizablePanel defaultSize={75}>
@@ -57,7 +57,7 @@ function DefaultLayout({
 					</ResizablePanel>
 				</ResizablePanelGroup>
 			</main>
-			<aside>aside</aside>
+			<aside className='border-l-[1px]'>aside</aside>
 			<DefaultFooter />
 		</div>
 	);
