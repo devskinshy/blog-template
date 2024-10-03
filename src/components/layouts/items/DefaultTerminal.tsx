@@ -1,13 +1,16 @@
 import React from 'react';
+import { ResizablePanel } from '@/components/ui/resizable';
 
 function DefaultTerminal() {
 	return (
-		<article className='max-h-40 max-w-full flex-initial overflow-scroll border'>
-			<div>
-				<div style={{ width: 10000, height: 10000 }}>terminal</div>
-				terminal
-			</div>
-		</article>
+		<ResizablePanel
+			collapsible
+			collapsedSize={0}
+			defaultSize={0}
+			minSize={10}
+			maxSize={50}>
+			<article>terminal</article>
+		</ResizablePanel>
 	);
 }
 

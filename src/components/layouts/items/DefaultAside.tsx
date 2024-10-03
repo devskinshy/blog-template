@@ -1,13 +1,16 @@
 import React from 'react';
+import { ResizablePanel } from '@/components/ui/resizable';
 
 function DefaultAside() {
 	return (
-		<aside className='max-h-full max-w-40 flex-initial overflow-scroll border'>
-			<div>
-				<div style={{ width: 10000, height: 10000 }}>RightSideBar</div>
-				RightSideBar
-			</div>
-		</aside>
+		<ResizablePanel
+			collapsible
+			collapsedSize={5}
+			defaultSize={5}
+			minSize={10}
+			maxSize={50}>
+			<aside>aside</aside>
+		</ResizablePanel>
 	);
 }
 

@@ -1,13 +1,16 @@
 import React from 'react';
+import { ResizablePanel } from '@/components/ui/resizable';
 
 function DefaultNav() {
 	return (
-		<nav className='max-h-full max-w-40 flex-initial overflow-scroll border'>
-			<div>
-				<div style={{ width: 10000, height: 10000 }}>LeftSideBar</div>
-				LeftSideBar
-			</div>
-		</nav>
+		<ResizablePanel
+			collapsible
+			collapsedSize={5}
+			defaultSize={5}
+			minSize={10}
+			maxSize={50}>
+			<nav>nav</nav>
+		</ResizablePanel>
 	);
 }
 
