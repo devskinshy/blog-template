@@ -1,7 +1,11 @@
 import React from 'react';
 
 function DefaultHeader() {
-	return <header className='col-span-3 border-b-[1px]'>Header</header>;
+	return (
+		<header className='border-b-[1px]'>
+			<div className='flex justify-center align-middle'>header</div>
+		</header>
+	);
 }
 
 export default DefaultHeader;
