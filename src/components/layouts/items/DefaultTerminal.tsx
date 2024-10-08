@@ -8,7 +8,8 @@ function DefaultTerminal() {
 			collapsedSize={0}
 			defaultSize={0}
 			minSize={10}
-			maxSize={50}>
+			maxSize={50}
+		>
 			<article>terminal</article>
 		</ResizablePanel>
 	);
