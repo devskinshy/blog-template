@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ResizablePanel } from '@/components/ui/resizable';
 
 function DefaultMain({

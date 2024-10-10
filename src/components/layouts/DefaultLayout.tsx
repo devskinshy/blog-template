@@ -1,13 +1,14 @@
 import React from 'react';
+
+import DefaultAside from '@/components/layouts/items/DefaultAside';
+import DefaultContainer from '@/components/layouts/items/DefaultContainer';
+import DefaultFooter from '@/components/layouts/items/DefaultFooter';
+import DefaultHeader from '@/components/layouts/items/DefaultHeader';
+import DefaultNav from '@/components/layouts/items/DefaultNav';
 import {
 	ResizableHandle,
 	ResizablePanelGroup,
 } from '@/components/ui/resizable';
-import DefaultHeader from '@/components/layouts/items/DefaultHeader';
-import DefaultFooter from '@/components/layouts/items/DefaultFooter';
-import DefaultNav from '@/components/layouts/items/DefaultNav';
-import DefaultAside from '@/components/layouts/items/DefaultAside';
-import DefaultContainer from '@/components/layouts/items/DefaultContainer';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 function DefaultLayout({

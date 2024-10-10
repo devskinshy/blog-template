@@ -6,44 +6,56 @@
 		"airbnb-typescript",
 		"prettier"
 	],
-	"plugins": ["jsx-a11y","react-hooks","import","prettier"],
+	"plugins": ["jsx-a11y", "react-hooks", "import", "prettier"],
 	"rules": {
+		"react/react-in-jsx-scope": ["off"],
+		"react/prop-types": ["off"],
+		"react/require-default-props": ["off"],
+		"react/jsx-props-no-spreading": ["off"],
 		"prettier/prettier": ["error"],
+		"sort-imports": [
+			"error",
+			{
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true,
+				"ignoreMemberSort": false,
+				"allowSeparatedGroups": true
+			}
+		],
 		"import/order": [
 			"error",
 			{
+				"newlines-between": "always",
 				"groups": [
-					"type",
-					"builtin",
-					"external",
+					["builtin", "external"],
 					"internal",
 					"parent",
 					"sibling",
-					"index",
-					"unknown"
+					"index"
 				],
 				"pathGroups": [
 					{
-						"pattern": "react*",
-						"group": "external",
-						"position": "before"
+						"pattern": "next",
+						"group": "builtin"
 					},
 					{
-						"pattern": "@pages/**",
-						"group": "internal",
-						"position": "after"
+						"pattern": "react",
+						"group": "builtin"
 					},
 					{
-						"pattern": "@components/**",
-						"group": "internal",
-						"position": "after"
+						"pattern": "@MyDesignSystem/**",
+						"group": "internal"
+					},
+					{
+						"pattern": "src/**",
+						"group": "internal"
 					}
 				],
+				"pathGroupsExcludedImportTypes": ["src/**", "@MyDesignSystem/**"],
 				"alphabetize": {
-					"caseInsensitive": true,
-					"order": "asc"
-				},
-				"pathGroupsExcludedImportTypes": []
+					"order": "asc",
+					"caseInsensitive": true
+				}
 			}
 		]
 	},

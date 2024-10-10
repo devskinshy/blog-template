@@ -1,11 +1,3 @@
-import React from 'react';
-import { ResizablePanel } from '@/components/ui/resizable';
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipTrigger,
-} from '@/components/ui/tooltip';
-import { Button } from '@/components/ui/button';
 import {
 	Book,
 	Bot,
@@ -15,6 +7,15 @@ import {
 	SquareTerminal,
 	SquareUser,
 } from 'lucide-react';
+import React from 'react';
+
+import { Button } from '@/components/ui/button';
+import { ResizablePanel } from '@/components/ui/resizable';
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 function DefaultAside() {
 	return (

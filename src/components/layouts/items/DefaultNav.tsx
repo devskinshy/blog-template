@@ -1,11 +1,3 @@
-import React from 'react';
-import { ResizablePanel } from '@/components/ui/resizable';
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipTrigger,
-} from '@/components/ui/tooltip';
-import { Button } from '@/components/ui/button';
 import {
 	Book,
 	Bot,
@@ -15,6 +7,15 @@ import {
 	SquareTerminal,
 	SquareUser,
 } from 'lucide-react';
+import React from 'react';
+
+import { Button } from '@/components/ui/button';
+import { ResizablePanel } from '@/components/ui/resizable';
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 function DefaultNav() {
 	return (
@@ -23,8 +24,7 @@ function DefaultNav() {
 			collapsedSize={5}
 			defaultSize={5}
 			minSize={10}
-			maxSize={50}
-		>
+			maxSize={50}>
 			<nav>
 				<nav className='grid gap-1 p-2'>
 					<Tooltip>
@@ -33,8 +33,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='rounded-lg bg-muted'
-								aria-label='Playground'
-							>
+								aria-label='Playground'>
 								<SquareTerminal className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -48,8 +47,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='rounded-lg'
-								aria-label='Models'
-							>
+								aria-label='Models'>
 								<Bot className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -63,8 +61,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='rounded-lg'
-								aria-label='API'
-							>
+								aria-label='API'>
 								<Code2 className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -78,8 +75,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='rounded-lg'
-								aria-label='Documentation'
-							>
+								aria-label='Documentation'>
 								<Book className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -93,8 +89,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='rounded-lg'
-								aria-label='Settings'
-							>
+								aria-label='Settings'>
 								<Settings2 className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -110,8 +105,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='mt-auto rounded-lg'
-								aria-label='Help'
-							>
+								aria-label='Help'>
 								<LifeBuoy className='size-5' />
 							</Button>
 						</TooltipTrigger>
@@ -125,8 +119,7 @@ function DefaultNav() {
 								variant='ghost'
 								size='icon'
 								className='mt-auto rounded-lg'
-								aria-label='Account'
-							>
+								aria-label='Account'>
 								<SquareUser className='size-5' />
 							</Button>
 						</TooltipTrigger>

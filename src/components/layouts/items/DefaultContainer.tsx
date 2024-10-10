@@ -1,11 +1,12 @@
 import React from 'react';
+
+import DefaultMain from '@/components/layouts/items/DefaultMain';
+import DefaultTerminal from '@/components/layouts/items/DefaultTerminal';
 import {
 	ResizableHandle,
 	ResizablePanel,
 	ResizablePanelGroup,
 } from '@/components/ui/resizable';
-import DefaultMain from '@/components/layouts/items/DefaultMain';
-import DefaultTerminal from '@/components/layouts/items/DefaultTerminal';
 
 function DefaultContainer({
 	children,
