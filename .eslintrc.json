@@ -27,7 +27,9 @@
 			{
 				"newlines-between": "always",
 				"groups": [
-					["builtin", "external"],
+					"builtin",
+					"type",
+					"external",
 					"internal",
 					"parent",
 					"sibling",
@@ -43,15 +45,11 @@
 						"group": "builtin"
 					},
 					{
-						"pattern": "@MyDesignSystem/**",
-						"group": "internal"
-					},
-					{
-						"pattern": "src/**",
+						"pattern": "@/**",
 						"group": "internal"
 					}
 				],
-				"pathGroupsExcludedImportTypes": ["src/**", "@MyDesignSystem/**"],
+				"pathGroupsExcludedImportTypes": [],
 				"alphabetize": {
 					"order": "asc",
 					"caseInsensitive": true

@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+
 import localFont from 'next/font/local';
 
 import DefaultLayout from '@/components/layouts/DefaultLayout';
@@ -28,7 +29,8 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
 				<DefaultLayout>{children}</DefaultLayout>
 			</body>
 		</html>
